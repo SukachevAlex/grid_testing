@@ -41,4 +41,44 @@ body
   margin: 0
   padding: 0
 
+
+
+.gallery
+  width: 90vw
+  display: grid
+  margin: 50px auto
+  justify-content: center
+  grid-template-columns: repeat(auto-fill, 100px)
+  grid-auto-rows: 100px
+  grid-auto-flow: dense
+  
+.gallery__item_w_1
+  grid-column: span 1;
+
+.gallery__item_w_2
+  grid-column: span 2;
+
+.gallery__item_w_3
+  grid-column: span 3;
+
+.gallery__item_w_4
+  grid-column: span 4;
+
+
+.gallery__item_h_1
+  grid-row: span 1
+
+.gallery__item_h_2
+  grid-row: span 2
+
+.gallery__item_h_3
+  grid-row: span 3
+
+.gallery__item
+  overflow: hidden
+
+.gallery__image
+  width: 100%
+  height: 100%
+
 @import "helpers/media"
